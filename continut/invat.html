@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ro">
     <head>
-        <title>Învăț</title>    
+        <meta charset="UTF-8">
+        <title>Învăț</title>
         <link rel="stylesheet" type="text/css" href="stil.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,23 +18,41 @@
                 <a href="inregistreaza.html">Înregistrare</a>
                 <a href="video.html">Video</a>
                 <a href="desen.html">Desen</a>
-                <a href="invat.html">Învăț</a> 
-                
+                <a href="despre.html">Despre</a>
             </nav>  
         </header>   
 
         <main>
             <aside>
                 <a href="#section1">Secțiunea 1</a>
+                <a href="#section2">Secțiunea 2</a>
+                <a href="#section3">Secțiunea 3</a>
             </aside> 
 
             <section id="section1">
+                <h2>Secțiunea 1: Informații Despre Sistem</h2>
                 <p id="date"></p>
+                <p id="url"></p>
+                <p id="navigator"></p>
+                <p id="os"></p>
+            </section>
+
+            <section id="section2">
+                <h2>Secțiunea 2: Desenare pe Canvas</h2>
+                <label for="strokeColor">Culoare contur:</label>
+                <input type="color" id="strokeColor" value="#f8e5df">
+                <label for="fillColor">Culoare umplere:</label>
+                <input type="color" id="fillColor" value="#23B5a3">
+                <canvas id="drawingCanvas" width="1000" height="250" style="border:1px solid #000;"></canvas>
+            </section>
+
+            <section id="section3">
+                <h2>Secțiunea 3: Creare tabel</h2>
             </section>
         </main>
+
         <footer><hr><p>@ 2025: Programare web</p></footer>
-        <script src="js/script.js"> </script>
+
+        <script src="js/script.js"></script>
     </body>
-
-
 </html>
