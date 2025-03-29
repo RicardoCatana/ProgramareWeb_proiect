@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: #748AA7;
+    color: #F8E5DF;
+}
+
+body {
+    margin: 0px;
+}
+
+header, main, footer {
+    margin: 0 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 15px; 
+}
+
+nav a {
+    text-decoration: none; 
+    padding: 5px 10px;
+    color: #F8E5DF;
+}
+
+nav a:hover {
+    color: #23B5A3; 
+}
+
+
+@media screen and (max-width: 768px) { /*pentru telefoane */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    nav {
+        display: none;
+    }
+
+    iframe {
+        display: none;
+    }
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-gallery iframe {
+    flex: 1 1 300px; 
+    max-width: 45%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .video-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-gallery iframe {
+        width: 100%;
+    }
+}
